@@ -1,5 +1,7 @@
 package exam2;
 
+import week3_ArrayList.LinkedLizt;
+
 /**
  *
  * @author Jeremy Santorelli

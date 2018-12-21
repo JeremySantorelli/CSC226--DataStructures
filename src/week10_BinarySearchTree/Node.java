@@ -23,6 +23,14 @@ public class Node<T> {
         left = right = null;
     }
 
+    public void setLeft(Node<T> left) {
+        this.left = left;
+    }
+
+    public void setRight(Node<T> right) {
+        this.right = right;
+    }
+
     public T getKey() {
         return key;
     }
@@ -34,8 +42,6 @@ public class Node<T> {
     public Node<T> getRight() {
         return right;
     }
-    
-    
 
     public String drawTree(Node root) {
         String ret = "";
@@ -120,9 +126,9 @@ public class Node<T> {
         }
         int offset = 0;
         int n = 0;
-        if(ele.key instanceof Integer){
+        if (ele.key instanceof Integer) {
             n = (int) ele.key;
-        }else{
+        } else {
             n = Integer.parseInt(((Movie) ele.key).getYear());
         }
         int numDigits = (int) Math.ceil(Math.log10(n));

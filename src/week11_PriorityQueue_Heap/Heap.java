@@ -6,7 +6,7 @@ package week11_PriorityQueue_Heap;
  */
 public class Heap<T extends Comparable<T>> {
 
-    T[] heap;
+    public T[] heap;
     int lastIndex, arrayCap;
     //ArrayList<T> items;
 
